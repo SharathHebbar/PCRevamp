@@ -1,0 +1,28 @@
+	db  78,  74,  78, 110, 115,  95 ; 550 BST
+	;   hp  atk  def  spd  sat  sdf
+
+if DEF(FAITHFUL)
+	db FIRE, FIRE
+else
+	db FIRE, GROUND
+endc
+	db 45 ; catch rate
+	db 209 ; base exp
+	db NO_ITEM ; item 1
+	db NO_ITEM ; item 2
+	dn FEMALE_12_5, 3 ; gender, step cycles to hatch
+	INCBIN "gfx/pokemon/typhlosion/front.dimensions"
+if DEF(FAITHFUL)
+	abilities_for TYPHLOSION, BLAZE, BLAZE, FLASH_FIRE
+else
+	abilities_for TYPHLOSION, FLASH_FIRE, FLAME_BODY, DROUGHT
+endc
+	db MEDIUM_SLOW ; growth rate
+	dn FIELD, FIELD ; egg groups
+
+	ev_yield   0,   0,   0,   0,   3,   0
+	;         hp, atk, def, spd, sat, sdf
+
+	; tmhm
+	tmhm DYNAMICPUNCH, CURSE, ROAR, TOXIC, HIDDEN_POWER, SUNNY_DAY, HYPER_BEAM, PROTECT, BULLDOZE, SOLAR_BEAM, IRON_TAIL, EARTHQUAKE, RETURN, DIG, ROCK_SMASH, DOUBLE_TEAM, FLAMETHROWER, FIRE_BLAST, SWIFT, AERIAL_ACE, SUBSTITUTE, FACADE, FLAME_CHARGE, REST, ATTRACT, ROCK_SLIDE, FOCUS_BLAST, WILD_CHARGE, WILL_O_WISP, SHADOW_CLAW, GIGA_IMPACT, GYRO_BALL, CUT, STRENGTH, BODY_SLAM, COUNTER, DEFENSE_CURL, DOUBLE_EDGE, EARTH_POWER, ENDURE, FIRE_PUNCH, HEADBUTT, ROLLOUT, SEISMIC_TOSS, SLEEP_TALK, SWAGGER, THUNDERPUNCH
+	; end

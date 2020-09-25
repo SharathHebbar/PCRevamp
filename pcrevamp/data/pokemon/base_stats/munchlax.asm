@@ -1,0 +1,20 @@
+	db 135,  85,  45,   5,  40,  85 ; 395 BST
+	;   hp  atk  def  spd  sat  sdf
+
+	db NORMAL, NORMAL
+	db 50 ; catch rate
+	db 94 ; base exp
+	db NO_ITEM ; item 1
+	db LEFTOVERS ; item 2
+	dn FEMALE_12_5, 7 ; gender, step cycles to hatch
+	INCBIN "gfx/pokemon/munchlax/front.dimensions"
+	abilities_for MUNCHLAX, PICKUP, THICK_FAT, GLUTTONY
+	db SLOW ; growth rate
+	dn NO_EGGS, NO_EGGS ; egg groups
+
+	ev_yield   1,   0,   0,   0,   0,   0
+	;         hp, atk, def, spd, sat, sdf
+
+	; tmhm
+	tmhm CURSE, CALM_MIND, TOXIC, HIDDEN_POWER, SUNNY_DAY, ICE_BEAM, BLIZZARD, PROTECT, RAIN_DANCE, BULLDOZE, SOLAR_BEAM, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, PSYCHIC, SHADOW_BALL, ROCK_SMASH, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, SUBSTITUTE, FACADE, REST, ATTRACT, ROCK_SLIDE, WATER_PULSE, SURF, STRENGTH, WHIRLPOOL, BODY_SLAM, DEFENSE_CURL, DOUBLE_EDGE, ENDURE, FIRE_PUNCH, HEADBUTT, HYPER_VOICE, ICE_PUNCH, ICY_WIND, PAY_DAY, ROLLOUT, SEED_BOMB, SLEEP_TALK, SWAGGER, THUNDERPUNCH, ZEN_HEADBUTT
+	; end
