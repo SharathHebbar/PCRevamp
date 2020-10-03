@@ -2909,7 +2909,9 @@ MagikarpEvosAttacks:
 	db EVOLVE_LEVEL, 20, GYARADOS
 	db 0 ; no more evolutions
 	db 1, SPLASH
-	db 15, TACKLE
+	db 5, TACKLE
+	db 15, AQUA_JET
+	db 20, WATER_PULSE
 	db 30, REVERSAL ; Flail → event move
 	db 0 ; no more level-up moves
 

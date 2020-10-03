@@ -60,7 +60,7 @@ CherrygroveMartAfterDex:
 	db -1
 
 VioletMart:
-	db 11 ; # items
+	db 1 ; # items
 	db POKE_BALL
 	db REPEAT_BALL
 	db POTION
@@ -71,7 +71,11 @@ VioletMart:
 	db X_ATTACK
 	db X_DEFEND
 	db X_SPEED
-	db FLOWER_MAIL
+	db X_SPCL_ATK
+	db X_SPCL_DEF
+	db X_ACCURACY
+	db DIRE_HIT
+	db GUARD_SPEC
 	db -1
 
 AzaleaMart:
@@ -90,68 +94,70 @@ AzaleaMart:
 
 Goldenrod2FMart1:
 	db 9 ; # items
-	db POTION
+	db GREAT_BALL
 	db SUPER_POTION
-	db ANTIDOTE
-	db PARALYZEHEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ICE_HEAL
 	db FULL_HEAL
 	db REVIVE
+	db GOLD_LEAF
+	db SILVER_LEAF
+	db TIMER_BALL
+	db LUXURY_BALL
+	db QUICK_BALL
 	db -1
 
 Goldenrod2FMart2:
 	db 10 ; # items
-	db POKE_BALL
-	db GREAT_BALL
-	db LUXURY_BALL
-	db TIMER_BALL
-	db QUICK_BALL
-	db ESCAPE_ROPE
-	db REPEL
-	db POKE_DOLL
-	db BLUESKY_MAIL
-	db MORPH_MAIL
+	dbw TM_DARK_PULSE,    25000
+	dbw TM_CALM_MIND,     20000
+	dbw TM_DAZZLINGLEAM,  25000
+	dbw TM_POISON_JAB,    25000
+	dbw TM_ROCK_SLIDE,    25000
+	dbw TM_X_SCISSOR,     25000
+	dbw TM_WILD_CHARGE,   25000
+	dbw TM_STONE_EDGE,    25000
+	dbw TM_SCALD,         25000
+	dbw TM_SHADOW_CLAW,   25000
 	db -1
 
 Goldenrod2FMart2Eevee:
 	db 11 ; # items
-	db POKE_BALL
-	db GREAT_BALL
-	db LUXURY_BALL
-	db TIMER_BALL
-	db QUICK_BALL
-	db ESCAPE_ROPE
-	db REPEL
-	db POKE_DOLL
-	db BLUESKY_MAIL
-	db MORPH_MAIL
-	db EON_MAIL
+	db LEAF_STONE
+	db FIRE_STONE
+	db WATER_STONE
+	db THUNDERSTONE
+	db MOON_STONE
+	db SUN_STONE
+	db DUSK_STONE
+	db DAWN_STONE
+	db SHINY_STONE
+	db ICE_STONE
+	db EVERSTONE
 	db -1
 
 Goldenrod3FMart:
 Celadon5FMart2:
-	db 8 ; # items
-	db X_ATTACK
-	db X_DEFEND
-	db X_SPEED
-	db X_SPCL_ATK
-	db X_SPCL_DEF
-	db X_ACCURACY
-	db DIRE_HIT
-	db GUARD_SPEC
+	db 9 ; # items
+	db ABILITY_CAP
+	db FOCUS_SASH
+	db DAMP_ROCK
+	db ICY_ROCK
+	db HEAT_ROCK
+	db SMOOTH_ROCK
+	db WHITE_HERB
+	db POWER_HERB 
+	db MENTAL_HERB 
 	db -1
 
 Goldenrod4FMart:
 Celadon5FMart1:
-	db 6 ; # items
-	db PROTEIN
-	db IRON
-	db CARBOS
-	db CALCIUM
-	db ZINC
-	db HP_UP
+	db 7 ; # items
+	db LEVEL_BALL
+	db LURE_BALL  
+	db MOON_BALL  
+	db FRIEND_BALL
+	db FAST_BALL
+	db HEAVY_BALL
+	db LOVE_BALL 
 	db -1
 
 Goldenrod5FTMMart:
@@ -175,11 +181,15 @@ GoldenrodHarborMart:
 	db WIDE_LENS
 	db ZOOM_LENS
 	db BRIGHTPOWDER
-	db SURF_MAIL
+	db MAX_REVIVE 
+	db MAX_ELIXIR 
 	db -1
 
 UndergroundMart:
-	db 4 ; # items
+	db 7 ; # items
+	db MULCH 
+	db SITRUS_BERRY
+	db LUM_BERRY
 	db ENERGYPOWDER
 	db ENERGY_ROOT
 	db HEAL_POWDER
@@ -188,17 +198,17 @@ UndergroundMart:
 
 EcruteakMart:
 	db 11 ; # items
-	db POKE_BALL
-	db GREAT_BALL
 	db NEST_BALL
-	db POTION
+	db GREAT_BALL
 	db SUPER_POTION
-	db ANTIDOTE
-	db PARALYZEHEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ICE_HEAL
-	db REVIVE
+	db PROTEIN
+	db IRON
+	db CARBOS
+	db CALCIUM
+	db ZINC
+	db HP_UP
+	db PP_UP
+	db PP_MAX 
 	db -1
 
 OlivineMart:
@@ -212,7 +222,7 @@ OlivineMart:
 	db AWAKENING
 	db ICE_HEAL
 	db SUPER_REPEL
-	db SURF_MAIL
+	db MOOMOO_MILK
 	db -1
 
 CianwoodMart:
@@ -259,14 +269,14 @@ BlackthornMart:
 	db GREAT_BALL
 	db ULTRA_BALL
 	db DUSK_BALL
-	db HYPER_POTION
-	db MAX_POTION
-	db FULL_HEAL
-	db REVIVE
-	db MAX_REPEL
-	db X_DEFEND
-	db X_ATTACK
-	db MUSIC_MAIL
+	db ODD_SOUVENIR
+	db RAZOR_CLAW
+	db RAZOR_FANG
+	db MAGMARIZER
+	db ELECTIRIZER
+	db PROTECTOR 
+	db DUBIOUS_DISC
+	db UP_GRADE
 	db -1
 
 IndigoPlateauMart:
